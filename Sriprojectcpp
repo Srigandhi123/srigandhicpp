@@ -1,0 +1,43 @@
+Name: G.srigandhi
+college name: Erode Senguthar engineering college
+
+
+#include <iostream>
+using namespace std;
+
+class Weather {
+private:
+    string city;
+    double temperature;
+    double humidity;
+
+public:
+    Weather(string cityName, double temp, double hum) {
+        city = cityName;
+        temperature = temp;
+        humidity = hum;
+    }
+
+    void displayWeather() {
+        cout << "Weather Condition in " << city << endl;
+        cout << "Temperature: " << temperature << "°C" << endl;
+        cout << "Humidity: " << humidity << "%" << endl;
+    }
+
+    void updateWeather(double newTemp, double newHum) {
+        temperature = newTemp;
+        humidity = newHum;
+    }
+};
+
+int main() {
+    Weather london("London", 24.5, 80.0);
+    Germany.displayWeather();
+
+    cout << "\nUpdating weather...\n" << endl;
+
+    Germany.updateWeather(30.0, 85.0);
+    Germany.displayWeather);
+
+    return 0;
+}
